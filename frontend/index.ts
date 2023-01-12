@@ -36,7 +36,6 @@ function getUrlParams(path: string, pattern: string): getUrlParamsResult {
       result = { ...result, ...resultObj };
     }
   }
-  console.log("result", result);
   return result;
 }
 
@@ -48,9 +47,9 @@ const path3 = "staticOne/one/staticThree/three";
 const path4 = "staticOne/one/staticTwo/staticThree/two";
 
 const result1 = getUrlParams(path1, pattern);
-const result2 = getUrlParams(path1, pattern);
-const result3 = getUrlParams(path1, pattern);
-const result4 = getUrlParams(path1, pattern);
+const result2 = getUrlParams(path2, pattern);
+const result3 = getUrlParams(path3, pattern);
+const result4 = getUrlParams(path4, pattern);
 
 console.log("result1", result1);
 console.log("result2", result2);
