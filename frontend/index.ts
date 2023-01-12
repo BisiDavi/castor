@@ -36,6 +36,7 @@ function getUrlParams(path: string, pattern: string): getUrlParamsResult {
       result = { ...result, ...resultObj };
     }
   }
+  console.log("result", result);
   return result;
 }
 
